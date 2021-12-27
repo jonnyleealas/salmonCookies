@@ -15,7 +15,7 @@ let jumper = {
     'catnip'
   ],
   render: function () {
-    for (let i = 0; i < this.like.length; i++) {
+    for (let i in this.like) {
       // li
       let li = document.createElement('li');
       li.textContent = `${this.name} likes ${this.like[i]}`;
@@ -23,6 +23,8 @@ let jumper = {
     }
   }
 };
+
+
 
 
 // 1.) create element
@@ -50,7 +52,7 @@ jumper.render();
 
 // img
 let img = document.createElement('img');
-img.src = 'images/jumper.jpeg';
+img.src = 'js/images/jumper.jpeg';
 img.alt = 'Jumper the cat is super sweet!';
 article.appendChild(img);
 
