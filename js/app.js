@@ -35,6 +35,11 @@ let article = document.createElement('article');
 let h3 = document.createElement('h3');
 h3.textContent = 'Jumper';
 article.appendChild(h3);
+// img
+let img = document.createElement('img');
+img.src = 'js/images/jumper.jpeg';
+img.alt = 'Jumper the cat is super sweet!';
+article.appendChild(img);
 
 // p
 let p = document.createElement('p');
@@ -47,11 +52,6 @@ article.appendChild(ul);
 
 jumper.render();
 
-// img
-let img = document.createElement('img');
-img.src = 'js/images/jumper.jpeg';
-img.alt = 'Jumper the cat is super sweet!';
-article.appendChild(img);
 
 profileContainer.appendChild(article);
 
@@ -88,9 +88,15 @@ let article2 = document.createElement("article")
 let h32 = document.createElement('h3');
 h32.textContent = 'Frankie';
 article2.appendChild(h32);
+// img
+let img2 = document.createElement('img');
+img2.src = 'js/images/jumper.jpeg';
+img2.alt = 'Jumper the cat is super sweet!';
+article2.appendChild(img2);
 
 let p2 = document.createElement('p');
 p2.textContent = 'Frankie the cat is super sweet!';
+
 article2.appendChild(p);
 
 let ul2 = document.createElement('ul')
@@ -98,11 +104,50 @@ article2.appendChild(ul2)
 
 frankie.render();
 
-// img
-let img2 = document.createElement('img');
-img2.src = 'js/images/jumper.jpeg';
-img2.alt = 'Jumper the cat is super sweet!';
-article2.appendChild(img2);
-
-
 profileContainer2.appendChild(article2)
+
+
+let profileContainer3 = document.getElementById('kittenProfiles3')
+
+let serena = {
+  name: "Serena",
+  about: 'Good cat',
+  cutenessIndex: 10,
+  like: [
+    'hotdogs',
+    'burgers',
+    'hats',
+    'motorcycles'
+  ],
+
+  render: function(){
+    for(let i in this.like){
+      let li = document.createElement('li');
+      li.textContent = `${this.name} like ${this.like[i]}`;
+      ul3.appendChild(li);
+    }
+  }
+}
+
+let article3 = document.createElement('article')
+
+let h33 = document.createElement('h3')
+h33.textContent = 'Serena'
+article3.appendChild(h33)
+
+let img3 = document.createElement('img');
+img3.src = 'js/images/serena.jpeg';
+img3.alt = 'This cat is named Serena';
+article3.appendChild(img3);
+
+
+let p3 = document.createElement('p')
+p3.textContent = "This is an awesome cat!"
+article3.appendChild(p3)
+
+let ul3 = document.createElement('ul');
+article3.appendChild(ul3)
+
+serena.render()
+
+profileContainer3.appendChild(article3)
