@@ -129,6 +129,7 @@ let serena = {
   }
 }
 
+
 let article3 = document.createElement('article')
 
 let h33 = document.createElement('h3')
