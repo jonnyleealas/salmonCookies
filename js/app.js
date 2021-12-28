@@ -132,7 +132,7 @@ let serena = {
 let article3 = document.createElement('article')
 
 let h33 = document.createElement('h3')
-h33.textContent = 'Serena'
+h33.textContent = serena.name
 article3.appendChild(h33)
 
 let img3 = document.createElement('img');
@@ -142,8 +142,12 @@ article3.appendChild(img3);
 
 
 let p3 = document.createElement('p')
-p3.textContent = "This is an awesome cat!"
+p3.textContent = serena.about;
 article3.appendChild(p3)
+
+let rating3 = document.createElement('p');
+rating3.textContent = `Serena's cuteness level is ${serena.cutenessIndex}`;
+article3.appendChild(rating3)
 
 let ul3 = document.createElement('ul');
 article3.appendChild(ul3)
