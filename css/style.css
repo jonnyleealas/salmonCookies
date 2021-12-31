@@ -64,23 +64,26 @@
     color: rgb(112, 159, 165);
   }
 
+  /* table {
+    text-align: center;
+  } */
+  .table-div {
+    text-align: right;
+  }
 
   tr {
     border: 2px solid black;
-    border-color: crimson;
-    background-color: pink;
   }
 
   th {
     border: 2px solid black;
-    /* border-color: crimson; */
+    
     
   }
 
-  td{
+  td {
     border: 2px solid black;
-    text-align: left;
-    background-color: pink ;
     
-  
 } 
+
+
